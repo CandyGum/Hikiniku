@@ -9,4 +9,5 @@ export const router = createBrowserRouter([
   { path: "/", element: <Top /> },
   { path: "SendMoney", element: <SendMoney /> },
   { path: "SelectMoney", element: <SelectMoney /> },
+  { path: "SelectMoney2", element: <SelectMoney2 /> },
 ]);

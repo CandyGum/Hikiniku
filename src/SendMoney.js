@@ -52,7 +52,7 @@ export const SendMoney = () => {
         <ul>
           <li onClick={() => navigate("../SelectMoney")}>
           <img src={bgImage2}style={imgStyle}/>{users[1].name}</li>
-          <li onClick={() => navigate("../SelectMoney")}>
+          <li onClick={() => navigate("../SelectMoney2")}>
           <img src={bgImage3}style={imgStyle}/>{users[2].name}</li>
         </ul>
 
