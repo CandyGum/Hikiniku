@@ -1,6 +1,6 @@
 .container {
     display: flex; /*横並び*/
-    //text-align: center;
+
 }
 
 .container .image{
