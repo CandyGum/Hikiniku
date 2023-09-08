@@ -33,7 +33,7 @@ function TransactionScreen({ recipient }) {
 }
 
 
-export const SlectMoney = () => {
+export const SelectMoney = () => {
     const users = [
         {name:"サンプル太郎", url: bgImage1},
         {name:"サンプル次郎", url: bgImage2},
