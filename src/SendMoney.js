@@ -14,6 +14,7 @@ export const SendMoney = () => {
     width: '70px', // 幅を調整
     height: '70px', // 高さを調整
   };
+
   return (
     <html>
         <head>
