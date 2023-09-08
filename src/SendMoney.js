@@ -6,9 +6,9 @@ import bgImage3 from "./images/human3.png";
 export const SendMoney = () => {
 
   const users = [
-    {name:"サンプル太郎", url: bgImage1},
-    {name:"サンプル次郎", url: bgImage2},
-    {name:"サンプル三郎", url: bgImage3}
+    {id:1,name:"サンプル太郎", url: bgImage1},
+    {id:2,name:"サンプル次郎", url: bgImage2},
+    {id:3,name:"サンプル三郎", url: bgImage3}
   ]
   const imgStyle = {
     width: '70px', // 幅を調整
@@ -22,18 +22,12 @@ export const SendMoney = () => {
         <body>
         
         <div className="SendMoney">
-            <p>送金相手を選択</p>
+            <p>送金先</p>
         </div>
-        
-
-        <ol>
-          {users.map((users, index) => (
-            <li key={index}>
-              <img src={users.url} alt={users.name} style={imgStyle}/>
-              {users.name}
-            </li>
-          ))}
-        </ol>
+          
+          <img src={users.url} alt={users.name} style={imgStyle}/>
+          {users.name}
+            
         </body>
     </html>
   )
