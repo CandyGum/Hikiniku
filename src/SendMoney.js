@@ -10,6 +10,10 @@ export const SendMoney = () => {
     {name:"サンプル次郎", url: bgImage2},
     {name:"サンプル三郎", url: bgImage3}
   ]
+  const imgStyle = {
+    width: '70px', // 幅を調整
+    height: '70px', // 高さを調整
+  };
   return (
     <html>
         <head>
@@ -24,7 +28,7 @@ export const SendMoney = () => {
         <ol>
           {users.map((users, index) => (
             <li key={index}>
-              <img src={users.url} alt={users.name} />
+              <img src={users.url} alt={users.name} style={imgStyle}/>
               {users.name}
             </li>
           ))}
