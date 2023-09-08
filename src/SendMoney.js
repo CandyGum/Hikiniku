@@ -3,19 +3,20 @@ import bgImage1 from "./images/human1.png";
 import bgImage2 from "./images/human2.png";
 import bgImage3 from "./images/human3.png";
 import { useNavigate } from "react-router-dom";
+import users from "./UserInfo";
 
 export const SendMoney = () => {
-   class User {
+  //  class User {
 
-     constructor( name, number, deposit) {
-         this.name = name;
-         this.number = number;
-         this.deposit = deposit;
-     }
-   }
-  var users = [];
-  users[0] = new User('太郎', 123, 10000);
-  users[1] = new User('太郎2', 456, 50000);
+  //    constructor( name, number, deposit) {
+  //        this.name = name;
+  //        this.number = number;
+  //        this.deposit = deposit;
+  //    }
+  //  }
+  // var users = [];
+  // users[0] = new User('太郎', 123, 10000);
+  // users[1] = new User('太郎2', 456, 50000);
 
   // const users = [
   //   {name:"サンプル太郎", url: bgImage1},
