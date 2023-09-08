@@ -5,21 +5,24 @@ import bgImage3 from "./images/human3.png";
 import { useNavigate } from "react-router-dom";
 
 export const SendMoney = () => {
-  class User {
+   class User {
 
-    constructor( name, age ) {
-        this.name = name;
-        this.age = age;
-    }
-  }
-  //var user[];
-  var taro = new User('太郎', 32);
+     constructor( name, number, deposit) {
+         this.name = name;
+         this.number = number;
+         this.deposit = deposit;
+     }
+   }
+  var users = [];
+  users[0] = new User('太郎', 123, 10000);
+  users[1] = new User('太郎2', 456, 50000);
 
-  const users = [
-    {name:"サンプル太郎", url: bgImage1},
-    {name:"サンプル次郎", url: bgImage2},
-    {name:"サンプル三郎", url: bgImage3}
-  ]
+  // const users = [
+  //   {name:"サンプル太郎", url: bgImage1},
+  //   {name:"サンプル次郎", url: bgImage2},
+  //   {name:"サンプル三郎", url: bgImage3}
+  // ]
+  
   const imgStyle = {
     width: '70px', // 幅を調整
     height: '70px', // 高さを調整
@@ -36,7 +39,7 @@ export const SendMoney = () => {
         </div>
         
 
-        <ol>
+        {/* <ol>
           {users.map((users, index) => (
             <li key={index}>
               <img src={users.url} alt={users.name} style={imgStyle}/>
@@ -44,7 +47,13 @@ export const SendMoney = () => {
             </li>
           ))}
         </ol>
-        <p onClick={() => navigate("SlectMoney")}>{taro.age}</p>
+        <p onClick={() => navigate("../SelectMoney")}>{users[0].name}</p> */}
+        <ul>
+          <li onClick={() => navigate("../SelectMoney")}>
+          <img src={bgImage1}style={imgStyle}/>{users[0].name}</li>
+          <li onClick={() => navigate("../SelectMoney")}>
+          <img src={bgImage2}style={imgStyle}/>{users[1].name}</li>
+        </ul>
         </body>
     </html>
   )
