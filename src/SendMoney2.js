@@ -5,11 +5,15 @@ import bgImage3 from "./images/human3.png";
 
 export const SendMoney = () => {
 
-  const users = [
-    {name:"サンプル太郎", url: bgImage1},
-    {name:"サンプル次郎", url: bgImage2},
-    {name:"サンプル三郎", url: bgImage3}
-  ]
+  class User {
+
+    constructor( name, age ) {
+        this.name = name;
+        this.age = age;
+    }
+  }
+  var taro = new User('太郎', 32);
+
   const imgStyle = {
     width: '70px', // 幅を調整
     height: '70px', // 高さを調整
@@ -26,14 +30,7 @@ export const SendMoney = () => {
         </div>
         
 
-        <ol>
-          {users.map((users, index) => (
-            <li key={index}>
-              <img src={users.url} alt={users.name} style={imgStyle}/>
-              {users.name}
-            </li>
-          ))}
-        </ol>
+        <p>{taro.age}</p>
         </body>
     </html>
   )

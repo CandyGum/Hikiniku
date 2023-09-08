@@ -8,7 +8,7 @@ import users from "./UserInfo";
 
 
 
-export const SelectMoney = () => {
+export const SelectMoney2 = () => {
 
     const navigate = useNavigate()
     const Max_Soukin = "50000";
@@ -36,10 +36,10 @@ export const SelectMoney = () => {
             <body>
             <div className="Step1">
               <div className="container">
-                <figure class="image"><img src={bgImage2} /></figure>
+                <figure class="image"><img src={bgImage3} /></figure>
                 {users.name}
                 <div class="right">
-            <p class="title">{users[1].name}</p>
+            <p class="title">{users[2].name}</p>
             <div class="button003">
             <p>送金上限金額：{Max_Soukin}円</p>
                 <input

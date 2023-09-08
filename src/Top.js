@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import bgImage from "./images/human1.png";
 import { useNavigate } from "react-router-dom";
 import './top.css';
+import users from "./UserInfo";
 
 export const Top = () => {
 
@@ -19,9 +20,9 @@ export const Top = () => {
           <div className="container">
             <figure class="image"><img src={bgImage} /></figure>
             <div class="right">
-            <p class="title">ユーザー名:ひき肉食べたい</p>
-            <p class="text">口座番号:00000000<br/>
-            預金残高:{zandaka}円</p>
+            <p class="title">ユーザー名:{users[0].name}</p>
+            <p class="text">口座番号:{users[0].number}<br/>
+            預金残高:{users[0].deposit}円</p>
             </div>
             
           </div> 

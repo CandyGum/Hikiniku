@@ -9,8 +9,8 @@ class User {
     }
   }
   const users = [
-    new User('太郎', 123, 10000),
-    new User('次郎', 456, 50000),
+    new User('ひき肉食べたい太郎', 123, 50000),
+    new User('次郎', 456, 80000),
     new User('三郎', 789, 100000),
   ];
   

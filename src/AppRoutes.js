@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Top } from "./Top";
 import { SendMoney } from "./SendMoney";
 import { SelectMoney } from "./SelectMoney";
+import { SelectMoney2 } from "./SelectMoney2";
 
 export const router = createBrowserRouter([
   { path: "/", element: <Top /> },

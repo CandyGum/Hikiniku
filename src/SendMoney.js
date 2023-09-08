@@ -51,10 +51,12 @@ export const SendMoney = () => {
         <p onClick={() => navigate("../SelectMoney")}>{users[0].name}</p> */}
         <ul>
           <li onClick={() => navigate("../SelectMoney")}>
-          <img src={bgImage1}style={imgStyle}/>{users[0].name}</li>
-          <li onClick={() => navigate("../SelectMoney")}>
           <img src={bgImage2}style={imgStyle}/>{users[1].name}</li>
+          <li onClick={() => navigate("../SelectMoney")}>
+          <img src={bgImage3}style={imgStyle}/>{users[2].name}</li>
         </ul>
+
+        <button onClick={() => navigate("../")}>戻る</button>
         </body>
     </html>
   )
