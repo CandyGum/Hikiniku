@@ -1,11 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
+import bgImage1 from "./images/human1.png";
+import bgImage2 from "./images/human2.png";
+import bgImage3 from "./images/human3.png";
 
 export const SendMoney = () => {
 
   const users = [
-    {name:"サンプル太郎"},
-    {name:"サンプル次郎"},
-    {name:"サンプル三郎"}
+    {name:"サンプル太郎", url: bgImage1},
+    {name:"サンプル次郎", url: bgImage2},
+    {name:"サンプル三郎", url: bgImage3}
   ]
   return (
     <html>
@@ -20,7 +23,10 @@ export const SendMoney = () => {
 
         <ol>
           {users.map((users, index) => (
-            <li key={index}>{users.name}</li>
+            <li key={index}>
+              <img src={users.url} alt={users.name} />
+              {users.name}
+            </li>
           ))}
         </ol>
         </body>
